@@ -1,0 +1,322 @@
+/* 通用样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 头部样式 */
+
+header {
+    padding: 15px 0;
+    background: #282c34;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#head {
+    max-width: 1200px;
+}
+
+#head #logo {
+    float: left;
+    font-size: 24px;
+    color: white;
+}
+
+#head #logo a {
+    color: white;
+}
+
+#nav {
+    float: right;
+}
+
+#nav li {
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+#nav a {
+    padding: 2px 8px;
+    color: white;
+}
+
+#nav a:hover {
+    background: #ddd;
+    border-radius: 3px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    color: #282c34;
+}
+
+/* main样式 */
+
+main {
+    margin-top: 66px;
+}
+
+section h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+section ul {
+    margin-top: 30px;
+}
+
+section ul:first-child {
+    margin-top: 0;
+}
+
+/* 面板样式 */
+
+#banner {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner #banner-img {
+    /* width: 10000px; */
+    position: absolute;
+}
+
+#banner #banner-img>li {
+    float: left;
+}
+
+#banner img {
+    width: 100vw;
+    height: 600px;
+}
+
+#banner .arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    top: 50%;
+    margin-top: -40px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+#banner .arrow:hover {
+    opacity: 0.6;
+}
+
+#banner .pre {
+    left: 50px;
+}
+
+#banner .next {
+    right: 50px;
+}
+
+#banner .bullets {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    font-size: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+#banner .bullets>li {
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+#banner .bullets>li.active {
+    background-color: #ccc;
+}
+
+/* 服务范畴 */
+
+#server .iconfont {
+    font-size: 60px;
+}
+
+#server .biaoti {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#server>ul {
+    display: flex;
+    text-align: center;
+    background: #ccc;
+    padding: 50px 0;
+}
+
+#server>ul li {
+    flex: 1;
+}
+
+/* 团队样式 */
+
+#team ul {
+    width: 1200px;
+    box-sizing: border-box;
+}
+
+#team>ul li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#team>ul li:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+#team>ul li div {
+    width: 600px;
+    height: 600px;
+}
+
+#team .contentImg>img {
+    width: 600px;
+    height: 600px;
+}
+
+#team .contentBox {
+    padding: 0 30px;
+}
+
+#team .contentBox>h2 {
+    text-align: center;
+}
+
+#team .contentBox .text {
+    margin-top: 50px;
+    margin-bottom: 280px;
+    color: #444;
+}
+
+#team .contentBox hr {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#team .contentBox .attr {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* 新闻动态 */
+
+#news>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#news>ul li {
+    width: 285px;
+    height: 330px;
+    
+}
+
+#news>ul>li img {
+    width: 285px;
+    height: 200px;
+}
+
+#news>ul>li .newsTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#news>ul>li .newsText {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #444;
+    margin-top: 10px;
+    
+}
+
+/* footer样式 */
+footer {
+    background: #282c34;
+    color: white;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    flex: 1;
+    
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer ul li .iconfont {
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+footer ul li:last-child{
+    text-align: center;
+}
+
+footer ul li:last-child img {
+    width: 80px;
+    height: 80px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
