@@ -1,5 +1,5 @@
 
-axios.get('http://mock-api.com/mgvrkAgQ.mock/newsinfo?page=1')
+axios.get(`./router/newsinfo-page=1.json`)
     .then(function (res) {
         console.log(res)
         let item = res.data.news[0]
@@ -20,7 +20,7 @@ axios.get('http://mock-api.com/mgvrkAgQ.mock/newsinfo?page=1')
 
 
 // footer
-axios.get('http://mock-api.com/mgvrkAgQ.mock/about')
+axios.get('./router/about.json')
     .then(function (res) {
         console.log(res)
         res.data.about.forEach(function (item) {

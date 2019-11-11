@@ -2,7 +2,7 @@
 
 
 // main
-axios.get('http://mock-api.com/mgvrkAgQ.mock/about')
+axios.get('./router/about.json')
     .then(function(res) {
         $('main > ul').append(`
             <li class="map-show" id="allmap"></li>
@@ -29,7 +29,7 @@ axios.get('http://mock-api.com/mgvrkAgQ.mock/about')
 
 
 // footer
-axios.get('http://mock-api.com/mgvrkAgQ.mock/about')
+axios.get('./router/about.json')
             .then(function(res) {
                 console.log(res)
                 res.data.about.forEach(function(item) {

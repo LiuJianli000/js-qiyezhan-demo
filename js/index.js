@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // banner 轮播
-    axios.get('http://mock-api.com/mgvrkAgQ.mock/banner-img')
+    axios.get('./router/banner-img.json')
         .then(function (res) {
             res.data.forEach(function (item) {
                 $('#banner-img').append(`<li><img src="${item.src}" /></li>`)
@@ -111,7 +111,7 @@ $(document).ready(function () {
         })
 
         // 获取团队信息
-        axios.get('http://mock-api.com/mgvrkAgQ.mock/team-info')
+        axios.get('./router/team-info.json')
             .then(function(res) {
                 // console.log(res)
                 res.data.team.forEach(function(item){
@@ -131,7 +131,7 @@ $(document).ready(function () {
             })
 
         // 获取新闻信息
-        axios.get('http://mock-api.com/mgvrkAgQ.mock/news')
+        axios.get('./router/news.json')
             .then(function(res) {
                 // console.log(res)
                 res.data.news.forEach(function(item) {
@@ -147,7 +147,7 @@ $(document).ready(function () {
             })
 
         // footer
-        axios.get('http://mock-api.com/mgvrkAgQ.mock/about')
+        axios.get('./router/about.json')
             .then(function(res) {
                 console.log(res)
                 res.data.about.forEach(function(item) {
