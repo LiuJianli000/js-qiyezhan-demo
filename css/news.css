@@ -11,7 +11,7 @@ ul li {
 }
 
 .layout {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -135,8 +135,14 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 1200px) {
+    #newsInfo > ul {
+        justify-content: space-around;
+    }
+}
 #newsInfo > ul > li{
-    width: 595px;
+    width: 590px;
     height: 250px;
     margin-bottom: 15px;
     background: #efefef;
