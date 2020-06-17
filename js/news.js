@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     var total = 0
     function fetch(num, refetch) {
-        axios.get(`http://mock-api.com/mgvrkAgQ.mock/newsinfo?page=${num}`)
+        axios.get(`https://mock-api.com/mgvrkAgQ.mock/newsinfo?page=${num}`)
             .then(function (res) {
                 res.data.news.forEach(function (item) {
                     $('#newsInfo > ul').append(`
