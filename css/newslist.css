@@ -31,7 +31,7 @@ a {
 header {
     padding: 15px 0;
     background: #282c34;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -128,8 +128,7 @@ main {
 footer {
     background: #282c34;
     color: white;
-    margin-top: 30px;
-    padding: 50px;
+    padding: 20px;
 }
 
 footer p {
@@ -145,7 +144,6 @@ footer ul {
 
 footer ul li {
     flex: 1;
-    
     text-align: center;
     padding: 30px 0;
 }

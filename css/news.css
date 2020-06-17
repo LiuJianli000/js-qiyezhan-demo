@@ -31,7 +31,7 @@ a {
 header {
     padding: 15px 0;
     background: #282c34;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -84,17 +84,15 @@ main {
 
 #title {
     position: relative;
-    height: 48px;
+    height: 55px;
     background: #282c34;
     color: white;
-    
 }
 
 #title .bar1 {
     border-top: 30px solid plum;
     border-right: 10px solid #282c34;
     width: 50%;
-    
     display: inline-block;
 }
 
@@ -135,12 +133,13 @@ main {
 #newsInfo > ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #newsInfo > ul > li{
-    width: 600px;
+    width: 590px;
     height: 250px;
     margin-bottom: 15px;
-    
+    background: #efefef;
 }
 #newsInfo > ul > li img {
     width: 250px;
@@ -183,8 +182,7 @@ main {
 footer {
     background: #282c34;
     color: white;
-    margin-top: 30px;
-    padding: 50px;
+    padding: 20px;
 }
 
 footer p {
@@ -200,7 +198,6 @@ footer ul {
 
 footer ul li {
     flex: 1;
-    
     text-align: center;
     padding: 30px 0;
 }

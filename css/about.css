@@ -29,7 +29,7 @@ a {
 header {
     padding: 15px 0;
     background: #282c34;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -77,16 +77,18 @@ header {
     color: #282c34;
 }
 
+main {
+    height: 650px;
+}
+
 main h1 {
     height: 60px;
-    width: 100vw;
     color: white;
     text-align: center;
     background: #282c34;
     margin-top: 60px;
     line-height: 60px;
     z-index: 1;
-    position: fixed;
 }
 
 main ul {
@@ -118,8 +120,7 @@ main li .iconfont {
 footer {
     background: #282c34;
     color: white;
-    margin-top: 30px;
-    padding: 50px;
+    padding: 20px;
 }
 
 footer p {
