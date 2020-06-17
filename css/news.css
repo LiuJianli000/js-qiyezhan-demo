@@ -165,7 +165,7 @@ main {
 
 /* page */
 #page {
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 #page ul {
     display: flex;
@@ -176,6 +176,11 @@ main {
     border: 1px solid black;
     cursor: pointer;
     margin: 1px;
+}
+
+.disabled {
+    pointer-events: none;
+    background: #ddd;
 }
 
 /* footer样式 */
