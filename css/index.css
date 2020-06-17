@@ -168,7 +168,7 @@ section ul:first-child {
     line-height: 50px;
     color: #eee;
     position: absolute;
-    top: calc(50% - 25px);
+    top: calc(50% - 30px);
     left: 20px;
     z-index: 2;
   }
@@ -191,7 +191,7 @@ section ul:first-child {
     line-height: 50px;
     color: #eee;
     position: absolute;
-    top: calc(50% - 25px);
+    top: calc(50% - 30px);
     right: 20px;
     z-index: 2;
   }
@@ -233,7 +233,6 @@ section ul:first-child {
 
 #team>ul li {
     display: flex;
-    margin-bottom: 15px;
 }
 
 #team>ul li:nth-child(2n) {
@@ -256,10 +255,11 @@ section ul:first-child {
 
 #team .contentBox>h2 {
     text-align: center;
+    margin-top: 10px;
 }
 
 #team .contentBox .text {
-    margin-top: 50px;
+    margin-top: 35px;
     margin-bottom: 280px;
     color: #444;
 }

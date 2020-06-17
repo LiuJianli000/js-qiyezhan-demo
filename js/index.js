@@ -95,7 +95,7 @@ $(document).ready(function () {
     // footer
     axios.get('./router/about.json')
         .then(function (res) {
-            console.log(res)
+            // console.log(res)
             res.data.about.forEach(function (item) {
                 $('footer > ul').append(`
                         <li>

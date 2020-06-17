@@ -9,10 +9,10 @@ axios.get('./router/about.json')
         `)
 
         var map = new BMap.Map("allmap");
-        var point = new BMap.Point(13274766.191805037, 2987611.95223);
+        var point = new BMap.Point(119.247957,26.060076);
         var marker = new BMap.Marker(point);  // 创建标注
         map.addOverlay(marker);              // 将标注添加到地图中
-        map.centerAndZoom(point, 1);
+        map.centerAndZoom(point, 20);
         map.enableScrollWheelZoom(true);
 
 
