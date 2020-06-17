@@ -119,6 +119,12 @@ main {
     margin: 20px auto;
 }
 
+@media screen and (max-width: 600px) {
+    #infoAA img {
+      width: 400px;
+      height: 400px;
+    }
+}
 
 
 
