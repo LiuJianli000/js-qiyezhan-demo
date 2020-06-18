@@ -132,11 +132,6 @@ header {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
-    #newsInfo > ul {
-        justify-content: space-around;
-    }
-}
 #newsInfo > ul > li{
     width: 590px;
     height: 250px;
