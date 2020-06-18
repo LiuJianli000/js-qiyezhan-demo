@@ -152,47 +152,17 @@ section ul:first-child {
     font-size: 12px;
     color: #666;
     align-items: center;
+    min-width: 1200px;;
   } 
   
   .carousel .action .pre {
     order: 1;
     cursor: pointer;
-    display: inline-block;
-    border: 1px solid #eee;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 50px;
-    color: #eee;
-    position: absolute;
-    top: calc(50% - 30px);
-    left: 20px;
-    z-index: 2;
-  }
-  .carousel .action .pre:hover,
-  .carousel .action .next:hover {
-    border: 1px solid #bbb;
-    color: #bbb;
   }
   
   .carousel .action .next {
     order: 3;
     cursor: pointer;
-    display: inline-block;
-    border: 1px solid #eee;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 50px;
-    color: #eee;
-    position: absolute;
-    top: calc(50% - 30px);
-    right: 20px;
-    z-index: 2;
   }
   
   .carousel .action .dots {

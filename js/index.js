@@ -112,4 +112,8 @@ $(document).ready(function () {
                 `)
         })
     
+    $(window).resize(function() {
+        var imgHeight = $('.carousel .panels > a').height()
+        $('.carousel .panels').height(imgHeight)
+    })
 })
