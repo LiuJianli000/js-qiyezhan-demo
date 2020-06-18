@@ -20,6 +20,10 @@ a {
     color: black;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -31,15 +35,14 @@ a {
 header {
     padding: 15px 0;
     background: #282c34;
-    width: 100%;
-    position: fixed;
+    min-width: 1200px;;
     top: 0;
     left: 0;
     z-index: 10;
 }
 
 #head {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -78,10 +81,6 @@ header {
 
 /* main样式 */
 
-main {
-    margin-top: 66px;
-}
-
 section h1 {
     text-align: center;
     margin-top: 50px;
@@ -99,14 +98,14 @@ section ul:first-child {
 
 .carousel {
     width: 100%;
-    position: relative;
+    top: -70px;
   }
   
   .carousel .panels {
     position: relative;
-    height: 100%;
     height: 600px;
     overflow: hidden;
+    min-width: 1200px;
   }
   
   .carousel .panels > a {
@@ -114,7 +113,7 @@ section ul:first-child {
     left: 0;
     z-index: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #fff;
     object-fit: cover;
   }
@@ -218,6 +217,8 @@ section ul:first-child {
     text-align: center;
     background: #ccc;
     padding: 50px 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 #server>ul li {
@@ -229,6 +230,7 @@ section ul:first-child {
 #team ul {
     width: 1200px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 #team>ul li {
@@ -284,7 +286,6 @@ section ul:first-child {
 #news>ul li {
     width: 285px;
     height: 330px;
-    
 }
 
 #news>ul>li img {
@@ -314,9 +315,10 @@ section ul:first-child {
 
 /* footer样式 */
 footer {
+    min-width: 1200px;
     background: #282c34;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 footer p {
@@ -328,6 +330,7 @@ footer ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    width: 1200px;
 }
 
 footer ul li {
