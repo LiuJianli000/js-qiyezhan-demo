@@ -11,7 +11,7 @@ ul li {
 }
 
 .layout {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -31,8 +31,7 @@ a {
 header {
     padding: 15px 0;
     background: #282c34;
-    width: 100%;
-    position: fixed;
+    min-width: 1200px;
     top: 0;
     left: 0;
     z-index: 1;
@@ -78,15 +77,12 @@ header {
 
 /* main样式 */
 
-main {
-    margin-top: 66px;
-}
-
 #title {
     position: relative;
     height: 55px;
     background: #282c34;
     color: white;
+    min-width: 1200px;
 }
 
 #title .bar1 {
@@ -193,7 +189,8 @@ main {
 footer {
     background: #282c34;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
+    min-width: 1200px;
 }
 
 footer p {
@@ -205,6 +202,7 @@ footer ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    min-width: 1200px;
 }
 
 footer ul li {

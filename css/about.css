@@ -9,7 +9,7 @@ ul li {
 }
 
 .layout {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -29,8 +29,7 @@ a {
 header {
     padding: 15px 0;
     background: #282c34;
-    width: 100%;
-    position: fixed;
+    min-width: 1200px;
     top: 0;
     left: 0;
     z-index: 1;
@@ -40,6 +39,7 @@ header {
 
 #head {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 #head #logo {
@@ -86,9 +86,9 @@ main h1 {
     color: white;
     text-align: center;
     background: #282c34;
-    margin-top: 60px;
     line-height: 60px;
     z-index: 1;
+    min-width: 1200px;
 }
 
 main ul {
@@ -120,7 +120,8 @@ main li .iconfont {
 footer {
     background: #282c34;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
+    min-width: 1200px;
 }
 
 footer p {
@@ -132,6 +133,7 @@ footer ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    width: 1200px;
 }
 
 footer ul li {
